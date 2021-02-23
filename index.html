@@ -75,6 +75,34 @@
 <script src="https://unpkg.com/jquery"></script>
 <script>
   // Add your code here!
+  //Task 1
+  console.log("Let's get ready to party with jQuery!")
+  
+  //Task 2
+  $("img").addClass("image-center");
+  
+  //Task 3
+  $("p").last().remove();
+
+  //Task 4
+  $("#title").css("font-size", Math.floor(Math.random() * 100));
+
+  //Task 5
+  $("ol").append($("<li>", {text: "The puppy is really cute"}));
+
+  //Task 6
+  // $("aside").empty().append("<p>", {text: "I'M SORY FOR THE LIST'S EXISTANCEI'M SORY FOR THE LIST'S EXISTANCEI'M SORY FOR THE LIST'S EXISTANCEI'M SORY FOR THE LIST'S EXISTANCE"});
+
+  //Task 7
+   $(".row mb-5").on("keyup blur change", ".form-control", function(e){
+     $formInputs = $(".form-control");
+     let red = $formInputs.eq(0).val();
+     let blue = $formInputs.eq(1).val();
+     let green = $formInputs.eq(2).val();
+     $("body").css("background-color", `rgb(${+red}, ${+blue}, ${+green})`);
+   });
+  
+
 </script>
 </body>
 
