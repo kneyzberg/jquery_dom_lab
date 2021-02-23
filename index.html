@@ -57,7 +57,7 @@
       </ol>
     </aside>
   </div>
-  <div class="row mb-5">
+  <div class="row-mb-5">
     <div class="col-sm-4">
       Red
       <input class="form-control" type="number" min="0" max="255" value="255">
@@ -94,9 +94,9 @@
   // $("aside").empty().append("<p>", {text: "I'M SORY FOR THE LIST'S EXISTANCEI'M SORY FOR THE LIST'S EXISTANCEI'M SORY FOR THE LIST'S EXISTANCEI'M SORY FOR THE LIST'S EXISTANCE"});
 
   //Task 7
-   $(".row mb-5").on("keyup blur change", ".form-control", function(e){
+   $(".row-mb-5").on("keyup blur change", ".form-control", function(e){
      $formInputs = $(".form-control");
-     let red = $formInputs.eq(0).val();
+     let red = $formInputs.eq(0).val()
      let blue = $formInputs.eq(1).val();
      let green = $formInputs.eq(2).val();
      $("body").css("background-color", `rgb(${+red}, ${+blue}, ${+green})`);
